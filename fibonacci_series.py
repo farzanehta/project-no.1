@@ -9,8 +9,9 @@ while i < 22:
     print(lst)
 
 # 2
+member = 22
 seq = [1, 1]
-while len(seq) < 22:
+while len(seq) < member:
     new_member = seq[-1] + seq[-2]
     seq.append(new_member)
-    print(seq)
+    print(*seq, sep='...')
