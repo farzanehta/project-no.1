@@ -1,5 +1,0 @@
-list01 = [1, 2, 3, 4, 5, 6, 7, 8]
-average = sum(list01) / len(list01)
-print("the average is: ", average)
-print("the maximum value is:", max(list01))
-print("the minimum of the list01 is: ", min(list01))
