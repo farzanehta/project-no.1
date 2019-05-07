@@ -1,5 +1,5 @@
 num = 1
-while num < 10:
+while num < 100:
     num += 1
     is_prime = True
     i = 1
@@ -9,3 +9,11 @@ while num < 10:
             is_prime = False
     if is_prime:
         print(num)
+
+
+
+num = 13
+i = 2
+while num % i != 0:
+    i += 1
+print(i == num)
