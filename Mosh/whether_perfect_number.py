@@ -1,3 +1,6 @@
+# what is perfect number?
+# sum of divisors (except number itself) == number OR sum of all divisors (include number itself) //2 == num
+
 def whether_perfect(num):
     is_perfect = False
     i = 1
