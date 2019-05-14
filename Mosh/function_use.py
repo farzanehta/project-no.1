@@ -69,20 +69,38 @@ print(whether_in_range(5))
 
 
 # --------------------------------------------
-
-def detector(msg):
-    d = {"upper_case": 0,
-         "lower_case": 0}
-    for c in msg:
-        if c.isupper():
-            d["upper_case"] += 1
-        elif c.islower():
-            d["lower_case"] += 1
-        else:
-            pass
-    return msg
+def unique(numbers):
+    for i in numbers:
+        if numbers.count(i) > 1:
+            numbers.remove(i)
+    return numbers
 
 
-msg = "The quick Brown Fox"
-print(d["upper_case"])
-print(d["lower_case"])
+lst_new = [1, 2, 3, 3, 3, 4, 5, 5]
+print(unique(lst_new))
+
+
+# ---------------------------------------------
+def check_prime(number):
+    is_prime = True
+    for n in range(2, number):
+        if number % n == 0:
+            is_prime = False
+    return is_prime
+
+
+print(check_prime(31 ))
+
+
+# -----------------------------------------------
+def even_num(lst):
+    res = []
+    for i in lst:
+        if i % 2 == 0:
+            res.append(i)
+    return res
+
+
+lst = range(1, 21)
+print(even_num(lst))
+# ------------------------------------------------
